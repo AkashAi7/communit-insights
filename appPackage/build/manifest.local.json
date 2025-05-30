@@ -1,0 +1,62 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.20/MicrosoftTeams.schema.json",
+    "version": "1.0.0",
+    "manifestVersion": "1.20",
+    "id": "371e851d-aacc-4ebb-bc22-c28a5b2041f2",
+    "name": {
+        "short": "community-insights-agent-local",
+        "full": "community-insights Agent"
+    },
+    "developer": {
+        "name": "Microsoft",
+        "mpnId": "",
+        "websiteUrl": "https://microsoft.com",
+        "privacyUrl": "https://privacy.microsoft.com/privacystatement",
+        "termsOfUseUrl": "https://www.microsoft.com/legal/terms-of-use"
+    },
+    "description": {
+        "short": "Shares the community inisights for the teams ",
+        "full": "Shares the community inisights for the teams"
+    },
+    "icons": {
+        "outline": "outline.png",
+        "color": "color.png"
+    },
+    "accentColor": "#FFFFFF",
+    "staticTabs": [
+        {
+            "entityId": "conversations",
+            "scopes": [
+                "personal"
+            ]
+        },
+        {
+            "entityId": "about",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "bots": [
+        {
+            "botId": "afa54575-cd7a-4fc8-af5a-87b3c5a16c90",
+            "scopes": [
+                "personal",
+                "team",
+                "groupChat"
+            ],
+            "isNotificationOnly": false,
+            "supportsCalling": false,
+            "supportsVideo": false,
+            "supportsFiles": false
+        }
+    ],
+    "validDomains": [
+        "n5zn5p2w-3978.asse.devtunnels.ms",
+        "*.botframework.com"
+    ],
+    "webApplicationInfo": {
+        "id": "afa54575-cd7a-4fc8-af5a-87b3c5a16c90",
+        "resource": "api://botid-afa54575-cd7a-4fc8-af5a-87b3c5a16c90"
+    }
+}
